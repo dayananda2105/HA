@@ -10,24 +10,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="mylearning.fblogin.Openpage">
 
-    <EditText
-        android:id="@+id/text1"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="enter number"
-        android:textSize="25dp"/>
-    <Button
-        android:id="@+id/cal"
-        android:hint="call"
-        android:textSize="23dp"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/text1"/>
     <Button
         android:id="@+id/back"
         android:hint="logout"
         android:textSize="23dp"
         android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/cal" />
+        android:layout_height="50dp" />
 </RelativeLayout>

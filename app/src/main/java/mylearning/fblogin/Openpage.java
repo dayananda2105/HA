@@ -35,10 +35,7 @@ public class Openpage extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                try {
-                   String number = text1.getText().toString();
-                   Intent callIntent = new Intent(Intent.ACTION_CALL);
-                   callIntent.setData(Uri.parse("tel:" + number));
-                   startActivity(callIntent);
+                   Toast.makeText(getApplicationContext(), "this is logined page",Toast.LENGTH_SHORT).show();
                }
             catch(RuntimeException e){
                 Toast.makeText(getApplicationContext(), "get permission of camera ",Toast.LENGTH_SHORT).show();
@@ -105,3 +102,4 @@ public class Openpage extends AppCompatActivity {
         }
     }
 }
+
