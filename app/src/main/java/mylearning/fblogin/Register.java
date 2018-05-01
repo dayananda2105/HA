@@ -39,7 +39,7 @@ public class Register extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()){
                             Toast.makeText(Register.this, "registration is successful",Toast.LENGTH_SHORT).show();
-                                Intent mov = new Intent(Register.this, Loginapp.class);
+                                Intent mov = new Intent(Register.this, Openpage.Loginapp.class);
                                 startActivity(mov);
                         }else {
                                 Toast.makeText(Register.this, "registration is failed",Toast.LENGTH_SHORT).show();
@@ -52,7 +52,7 @@ public class Register extends AppCompatActivity {
         k.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent mov = new Intent(Register.this, Loginapp.class);
+                Intent mov = new Intent(Register.this, Openpage.Loginapp.class);
                 startActivity(mov);
             }
         });
